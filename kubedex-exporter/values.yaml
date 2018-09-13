@@ -1,2 +1,6 @@
 # The pod name
 Name: kubedex-exporter
+image:
+  repository: kubedex
+  tag: latest
+  pullPolicy: IfNotPresent
