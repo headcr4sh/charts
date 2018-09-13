@@ -1,3 +1,4 @@
+name: kubedex-exporter
 image:
   registry: docker.io
   repository: kubedex/kubedex-exporter

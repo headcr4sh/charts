@@ -1,7 +1,17 @@
 apiVersion: v1
 entries:
   kubedex-exporter:
-  - created: 2018-09-13T13:51:46.898384427+07:00
+  - created: 2018-09-13T13:55:18.613003939+07:00
+    description: Deploy a kubedex-exporter pod
+    digest: fa64621aa9eecabafd1168caea6bfd72af18b14ff0d4f799c3ea23e56793f405
+    home: https://kubedex.com
+    name: kubedex-exporter
+    sources:
+    - https://github.com/kubedex/exporter
+    urls:
+    - https://kubedex.github.io/charts/kubedex-exporter-0.0.5.tgz
+    version: 0.0.5
+  - created: 2018-09-13T13:55:18.612843132+07:00
     description: Deploy a kubedex-exporter pod
     digest: f5986757f41bd0b9dd8677649b3f1174dbf96b4dfa81412688c484f133269258
     home: https://kubedex.com
@@ -11,7 +21,7 @@ entries:
     urls:
     - https://kubedex.github.io/charts/kubedex-exporter-0.0.4.tgz
     version: 0.0.4
-  - created: 2018-09-13T13:51:46.898219538+07:00
+  - created: 2018-09-13T13:55:18.612684597+07:00
     description: Deploy a kubedex-exporter pod
     digest: cdb5e7f5b120aea8412900782dd507d2de11632676afd24ae80020c890a871ca
     home: https://kubedex.com
@@ -21,7 +31,7 @@ entries:
     urls:
     - https://kubedex.github.io/charts/kubedex-exporter-0.0.3.tgz
     version: 0.0.3
-  - created: 2018-09-13T13:51:46.897740253+07:00
+  - created: 2018-09-13T13:55:18.612481217+07:00
     description: Deploy a kubedex-exporter pod
     digest: 5ddba833c9d78653dc17c067270d717984a2c556d648eeea9933f82b945ba2c9
     home: https://kubedex.com
@@ -31,7 +41,7 @@ entries:
     urls:
     - https://kubedex.github.io/charts/kubedex-exporter-0.0.2.tgz
     version: 0.0.2
-  - created: 2018-09-13T13:51:46.897285948+07:00
+  - created: 2018-09-13T13:55:18.612319057+07:00
     description: Deploy a kubedex-exporter pod
     digest: 056aaede19b9bb3d1a285959c70d2b68373d429071aaf4148e2ab66aaf3b3c48
     home: https://kubedex.com
@@ -41,4 +51,4 @@ entries:
     urls:
     - https://kubedex.github.io/charts/kubedex-exporter-0.0.1.tgz
     version: 0.0.1
-generated: 2018-09-13T13:51:46.894644808+07:00
+generated: 2018-09-13T13:55:18.61195109+07:00

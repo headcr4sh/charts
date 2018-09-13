@@ -22,6 +22,6 @@ spec:
   # more conventional syntax: {{.restartPolicy | default "Never"}}
   restartPolicy: {{default "Always" .Values.restartPolicy}}
   containers:
-  - name: {{ .Release.Name }}
+  - name: {{ .Values.name }}
     image: "{{ .Values.image.registry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"
     imagePullPolicy: {{ .Values.image.pullPolicy | quote }}
