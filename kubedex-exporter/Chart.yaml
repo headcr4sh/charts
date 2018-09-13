@@ -1,6 +1,6 @@
 name: kubedex-exporter
 description: Deploy a kubedex-exporter pod
-version: 0.0.4
+version: 0.0.5
 home: https://kubedex.com
 sources:
   - https://github.com/kubedex/exporter
