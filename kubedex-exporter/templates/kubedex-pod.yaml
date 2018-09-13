@@ -14,8 +14,8 @@ metadata:
     chart: "{{.Chart.Name}}-{{.Chart.Version}}"
   annotations:
     "helm.sh/created": {{.Release.Time.Seconds | quote }}
-    "prometheus.io/scrape": true
-    "prometheus.io/port": 9484
+    "prometheus.io/scrape": "true"
+    "prometheus.io/port": "9484"
 spec:
   # This shows how to use a simple value. This will look for a passed-in value
   # called restartPolicy. If it is not found, it will use the default value.
