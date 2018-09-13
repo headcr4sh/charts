@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  kubedex-exporter:
+  - created: 2018-09-13T12:01:56.817884434+07:00
+    description: Deploy a kubedex-exporter pod
+    digest: 056aaede19b9bb3d1a285959c70d2b68373d429071aaf4148e2ab66aaf3b3c48
+    home: https://kubedex.com
+    name: kubedex-exporter
+    sources:
+    - https://github.com/kubedex/exporter
+    urls:
+    - https://kubedex.github.com/charts/kubedex-exporter-0.0.1.tgz
+    version: 0.0.1
+generated: 2018-09-13T12:01:56.816988924+07:00
