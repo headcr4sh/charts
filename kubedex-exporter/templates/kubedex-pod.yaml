@@ -14,7 +14,6 @@ metadata:
     chart: "{{.Chart.Name}}-{{.Chart.Version}}"
   annotations:
     "helm.sh/created": {{.Release.Time.Seconds | quote }}
-    "prometheus.io/scrape": "\"true\""
 spec:
   # This shows how to use a simple value. This will look for a passed-in value
   # called restartPolicy. If it is not found, it will use the default value.
@@ -25,3 +24,7 @@ spec:
   - name: {{ .Values.name }}
     image: "{{ .Values.image.registry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}"
     imagePullPolicy: {{ .Values.image.pullPolicy | quote }}
+  template:
+    metadata:
+      annotations:
+{{ toYaml .Values.podAnnotations | indent 8 }}
