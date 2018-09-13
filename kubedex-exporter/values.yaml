@@ -5,4 +5,3 @@ image:
   tag: latest
   pullPolicy: IfNotPresent
 restartPolicy: Always
-podAnnotations: { prometheus.io/scrape: "true" }
