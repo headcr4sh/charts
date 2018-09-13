@@ -1,6 +1,6 @@
-# The pod name
-Name: kubedex-exporter
 image:
-  repository: kubedex
+  registry: docker.io
+  repository: kubedex/kubedex-exporter
   tag: latest
   pullPolicy: IfNotPresent
+restartPolicy: Always
