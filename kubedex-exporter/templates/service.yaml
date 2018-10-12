@@ -1,0 +1,25 @@
+{{- if .Values.service.enabled }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "ke.fullname" . }}
+  labels:
+    heritage: {{.Release.Service | quote }}
+    app: kubedex-exporter
+    release: {{.Release.Name | quote }}
+    chart: "{{.Chart.Name}}-{{.Chart.Version}}"
+  annotations:
+    "helm.sh/created": {{.Release.Time.Seconds | quote }}
+    "prometheus.io/scrape": "true"
+    "prometheus.io/port": "8080"
+    "prometheus.io/path": "/"
+spec:
+  selector:
+    app: kubedex-exporter
+    release: {{.Release.Name | quote }}
+  ports:
+  - protocol: TCP
+    name: "http"
+    port: 8080
+    targetPort: 9484
+{{- end }}

@@ -5,3 +5,8 @@ image:
   tag: 1.0.2
   pullPolicy: IfNotPresent
 restartPolicy: Always
+
+service:
+  # Set this value to true to enable a service that shall be scraped
+  # instead of the individual Pods of the Deployment's ReplicaSet.
+  enabled: false
